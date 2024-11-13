@@ -1,0 +1,9 @@
+name: nodejs
+version: 1.0.0
+displayName: "Node.js"
+description: "A sample Node.js application Devfile"
+icon: "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png"
+tags:
+  - "Node.js"
+  - "Express"
+projectType: "application"

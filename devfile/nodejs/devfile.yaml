@@ -1,0 +1,30 @@
+schemaVersion: 2.1.0
+metadata:
+  name: nodejs
+  version: 1.0.0
+  displayName: Node.js
+  description: Node.js sample devfile
+components:
+  - name: runtime
+    container:
+      image: node:14
+      memoryLimit: 512Mi
+      endpoints:
+        - name: "nodejs-app"
+          targetPort: 3000
+          exposure: public
+commands:
+  - id: install
+    exec:
+      component: runtime
+      commandLine: "npm install"
+      workingDir: "/projects"
+      group:
+        kind: build
+  - id: run
+    exec:
+      component: runtime
+      commandLine: "npm start"
+      workingDir: "/projects"
+      group:
+        kind: run

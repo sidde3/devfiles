@@ -1,0 +1,10 @@
+name: dotnet
+version: 1.0.0
+displayName: ".NET Core"
+description: "A sample .NET Core application Devfile"
+icon: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg"
+tags:
+  - ".NET Core"
+  - "C#"
+  - "ASP.NET"
+projectType: "application"
